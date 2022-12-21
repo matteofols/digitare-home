@@ -61,7 +61,7 @@ nav a:hover{
 	background-image: -moz-url("library.jpg");
 	background-image: -webkit-url("library.jpg");
 	background-image: -o-url("library.jpg");  
-	background-image: url("./images/library.jpg");
+	background-image: url("library.jpg");
     background-repeat: no-repeat;
     opacity:0.8;
     background-size: 100vw 100vh;
