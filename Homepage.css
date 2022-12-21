@@ -58,9 +58,9 @@ nav a:hover{
 	width: 100vw;
     height: 500px;
 	background-color: #2da397;
-	background-image: -moz-url("./images/library.jpg");
-	background-image: -webkit-url("./images/library.jpg");
-	background-image: -o-url("./images/library.jpg");  
+	background-image: -moz-url("library.jpg");
+	background-image: -webkit-url("library.jpg");
+	background-image: -o-url("library.jpg");  
 	background-image: url("./images/library.jpg");
     background-repeat: no-repeat;
     opacity:0.8;
