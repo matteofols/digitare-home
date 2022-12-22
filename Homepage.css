@@ -52,7 +52,7 @@ nav a:hover{
  	text-decoration: underline #FFFFFF 0.2rem;
  	height: 3rem;
  }
-
+/* 
  .search-bar{
 	height:60px;
 	width: 60px;
@@ -101,7 +101,7 @@ nav a:hover{
 	color: #FFFFFF;
 		
 }
-}
+} */
  
 .hero{
 	display: flex;
