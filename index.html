@@ -2,414 +2,125 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Digitare Home</title>
-   <link rel="shortcut icon" href="./images/finallogo.png"> 
-   
-    <link rel="stylesheet" type = "text/css" href="Homepage.css">
-    
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  
+    <link rel="shortcut icon" href="./images/finallogo.png"> 
+    <link rel="stylesheet" type="text/css" href="Homepage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-	<div id="container">
-<div class="topnav">
-    <nav>
-    <a href="Home.html" class= "active">Home</a>
-    <a href="AboutUs.html">About Us</a>
-    <a href="Subjects.html">Subjects</a>
-    <a href="ContactUs.html">Contact Us</a>
-    </nav>
-<!-- 
-	<div class="search-bar"> 
-    	<input type="text" class="search-bar__input" placeholder="enter your subject" aria-label="search">
-    	
-    	<button class="search-bar__submit"><i class="fa fa-search" aria-label="submit search"></i></button>
-    </div> -->
+    <div id="container">
+        <!-- Top Navigation -->
+        <div class="topnav">
+            <nav>
+                <a href="Home.html" class="active">Home</a>
+                <a href="AboutUs.html">About Us</a>
+                <a href="Subjects.html">Subjects</a>
+                <a href="ContactUs.html">Contact Us</a>
+            </nav>
+        </div>
 
-</div>
-<div class="hero">
-    <header>
- <div class="herocon">
-       <h2>At Digitare, our one & only mission is to expand your knowledge base</h2>
-       <button class="Curious"> Curious For More</button>
- </div>
-    </header>
+        <!-- Hero Section -->
+        <div class="hero">
+            <header>
+                <div class="herocon">
+                    <h2>At Digitare, our one & only mission is to expand your knowledge base</h2>
+                    <button class="Curious">Curious For More</button>
+                </div>
+            </header>
+        </div>
+
+        <!-- Top Section (Achieve Goals & Join Community) -->
+        <div id="toplr">
+            <div class="topleft">
+                <div class="topleft-icon">
+                    <img src="./images/achieve-update.png" alt="icon">
+                </div>
+                <div class="topleft-text">
+                    <h2>Achieve your goals with Digitare</h2>
+                    <p>Discover a variety of interesting subjects</p>
+                </div>
+            </div>
+            <div class="topright">
+                <div class="topright-icon">
+                    <img src="./images/connect-big.png" alt="icon">
+                </div>
+                <div class="topright-text">
+                    <h2>Join our community</h2>
+                    <p>Don't just study, connect the dots with our community of like-minded thinkers</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Featured Books Section -->
+        <section id="featuredbooks" class="slider">
+            <div class="fbt">
+                <h3>Featured Books</h3>
+            </div>
+            <div id="autoWidth" class="cs-hidden snaps-inline">
+                <!-- Example of Book Item -->
+                <div id="item-a" class="item">
+                    <div class="box">
+                        <div class="slide-img">
+                            <img alt="1" src="./images/biology-AP.png">
+                        </div>
+                        <div class="detail-box">
+                            <div class="type">
+                                <a href="#">Entrepreneurship</a>
+                                <span>Brand New Arrival</span>
+                            </div>
+                            <a href="#">Free</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Repeat similar items for other books -->
+            </div>
+        </section>
+
+        <!-- Center Info Section -->
+        <div class="center-info">
+            <div class="center-pic">
+                <img src="./images/Digitare4.PNG" alt="collaborative image">
+            </div>
+            <div class="center-text">
+                <h2>What is Lorem Ipsum?</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p>
+            </div>
+        </div>
+
+        <!-- Articles Section -->
+        <article class="News">
+            <h3 class="Newsheader">Articles</h3>
+            <div class="articleimage snaps-inline">
+                <div id="article-a" class="article">
+                    <div class="paper">
+                        <div class="front-img">
+                            <img alt="group-studying" src="./images/groupstudying.jpg">
+                        </div>
+                        <div class="detail-paper">
+                            <div class="articletitle">
+                                <a href="#">Benefits of having a study group</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Repeat similar items for other articles -->
+            </div>
+        </article>
+
+        <!-- Footer Section -->
+        <footer class="bottomfooter">
+            <span id="firstfooter" class="footer">
+                <img src="./images/finallogo.png" alt="DigitareTech Logo">
+            </span>
+            <span id="middlefooter" class="footer">
+                <a href="Home.html" class="footertab">Home</a>
+                <a href="AboutUs.html" class="footertab">About Us</a>
+                <a href="Subjects.html" class="footertab">Subjects</a>
+                <a href="ContactUs.html" class="footertab">Contact Us</a>
+            </span>
+            <span id="lastfooter" class="footer"></span>
+        </footer>
     </div>
-    
- <div id="toplr">
-  <div class="topleft">
-  	<div class="topleft-icon">
-  		<img src="./images/achieve-update.png" alt="icon">
-	</div>
-  	<div class="topleft-text">
-        <h2>Achieve your goals with Digitare</h2>
-        <p>Discover a variety of interesting subjects</p>
-	</div>
-</div>
-    <div class="topright">
-    	<div class="topright-icon">
-			<img src="./images/connect-big.png" alt="icon">
-		</div>
-    	<div class="topright-text">
-        <h2>Join our community</h2>
-        <p> Don't just study, connect the dots with our community of like minded thinkers</p>
-		</div>
-    </div>
- </div>
-  
-<section id="featuredbooks" class="slider">
-	<div class="fbt">
-	<h3>Featured Books</h3>
-	</div>
-	<div id="autoWidth" class="cs-hidden snaps-inline">
-		<!--1-->
-		<div id="item-a" class="item">
-			<!--box slider-->
-		<div class="box">
-			<!--img-box-->
-		<div class="slide-img">
-			<img alt="1" src="./images/biology-AP.png">
-		</div>
-	<!--detail-box-->
-		<div class="detail-box">
-			<!--type-->
-		<div class="type">
-			<a href="#">Entrpreneurship</a>
-			<span>Brand New Arrival</span>
-				
-		</div>
-		<!--price-->
-		<a href="#">Free</a>
-		</div>
-		</div>	
-		</div>
-		
-		<!--2-->
-		<div id="item-b" class="item">
-			<!--box slider-->
-		<div class="box">
-			<!--img-box-->
-		<div class="slide-img">
-			<img alt="1" src="./images/biology-AP.png">
-		</div>
-	<!--detail-box-->
-		<div class="detail-box">
-			<!--type-->
-		<div class="type">
-			<a href="#">Entrpreneurship</a>
-			<span>Brand New Arrival</span>
-				
-		</div>
-		<!--price-->
-		<a href="#">Free</a>
-		</div>
-		</div>	
-		</div>
-		
-		<!--3-->
-		<div id="item-c" class="item">
-			<!--box slider-->
-		<div class="box">
-			<!--img-box-->
-		<div class="slide-img">
-			<img alt="1" src="./images/biology-AP.png">
-		</div>
-	<!--detail-box-->
-		<div class="detail-box">
-			<!--type-->
-		<div class="type">
-			<a href="#">Entrpreneurship</a>
-			<span>Brand New Arrival</span>
-				
-		</div>
-		<!--price-->
-		<a href="#">Free</a>
-		</div>
-		</div>	
-		</div>
-		
-		<!--4-->
-		<div id="item-d" class="item">
-			<!--box slider-->
-		<div class="box">
-			<!--img-box-->
-		<div class="slide-img">
-			<img alt="1" src="./images/biology-AP.png">
-		</div>
-	<!--detail-box-->
-		<div class="detail-box">
-			<!--type-->
-		<div class="type">
-			<a href="#">Entrpreneurship</a>
-			<span>Brand New Arrival</span>
-				
-		</div>
-		<!--price-->
-		<a href="#">Free</a>
-		</div>
-		</div>	
-		</div>
-		
-		<!--5-->
-		<div id="item-e" class="item">
-			<!--box slider-->
-		<div class="box">
-			<!--img-box-->
-		<div class="slide-img">
-			<img alt="1" src="./images/biology-AP.png">
-		</div>
-	<!--detail-box-->
-		<div class="detail-box">
-			<!--type-->
-		<div class="type">
-			<a href="#">Entrpreneurship</a>
-			<span>Brand New Arrival</span>
-				
-		</div>
-		<!--price-->
-		<a href="#">Free</a>
-		</div>
-		</div>	
-		</div>
-		
-		<!--6-->
-		<div id="item-f" class="item">
-			<!--box slider-->
-		<div class="box">
-			<!--img-box-->
-		<div class="slide-img">
-			<img alt="1" src="./images/biology-AP.png">
-		</div>
-	<!--detail-box-->
-		<div class="detail-box">
-			<!--type-->
-		<div class="type">
-			<a href="#">Entrpreneurship</a>
-			<span>Brand New Arrival</span>
-				
-		</div>
-		<!--price-->
-		<a href="#">Free</a>
-		</div>
-		</div>	
-		</div>
-		
-		<!--7-->
-		<div id="item-g" class="item">
-			<!--box slider-->
-		<div class="box">
-			<!--img-box-->
-		<div class="slide-img">
-			<img alt="1" src="./images/biology-AP.png">
-		</div>
-	<!--detail-box-->
-		<div class="detail-box">
-			<!--type-->
-		<div class="type">
-			<a href="#">Entrpreneurship</a>
-			<span>Brand New Arrival</span>
-				
-		</div>
-		<!--price-->
-		<a href="#">Free</a>
-		</div>
-		</div>	
-		</div>
-		
-		<!--8-->
-		<div id="item-h" class="item">
-			<!--box slider-->
-		<div class="box">
-			<!--img-box-->
-		<div class="slide-img">
-			<img alt="1" src="./images/biology-AP.png">
-		</div>
-	<!--detail-box-->
-		<div class="detail-box">
-			<!--type-->
-		<div class="type">
-			<a href="#">Entrpreneurship</a>
-			<span>Brand New Arrival</span>
-				
-		</div>
-		<!--price-->
-		<a href="#">Free</a>
-		</div>
-		</div>	
-		</div>
-		
-		<!--9-->
-		<div id="item-i" class="item">
-			<!--box slider-->
-		<div class="box">
-			<!--img-box-->
-		<div class="slide-img">
-			<img alt="1" src="./images/biology-AP.png">
-		</div>
-	<!--detail-box-->
-		<div class="detail-box">
-			<!--type-->
-		<div class="type">
-			<a href="#">Entrpreneurship</a>
-			<span>Brand New Arrival</span>
-				
-		</div>
-		<!--price-->
-		<a href="#">Free</a>
-		</div>
-		</div>	
-		</div>
-	
-	</div>
-</section>
-
-<div class="center-info">
-    <div class="center-pic">
-      <img src="./images/Digitare4.PNG" alt="collaborative image">
-    </div>
-    <div class= "center-text">
-        <h2>What is Lorem Ipsum?</h2>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-
-</p>
-    </div>
-    </div>
-    
-<article class="News">
-    <h3 class="Newsheader">Articles</h3>
-    <div class = "articleimage snaps-inline">
-	<div id="article-a" class="article">
-			<!--paper slider-->
-		<div class="paper">
-			<!--img-box-->
-		<div class="front-img">
-			<img alt="group-studying" src="./images/groupstudying.jpg">
-		</div>
-	<!--detail-paper-->
-		<div class="detail-paper">
-			<!--category-->
-		<div class="articletitle">
-			<a href="#">Benefits of having a study group</a>
-		</div>
-		</div>
-		</div>	
-		</div>
-		
-	<div id="article-b" class="article">
-			<!--paper slider-->
-		<div class="paper">
-			<!--img-box-->
-		<div class="front-img">
-			<img alt="pencilbiting" src="./images/pencilbitting.jpg"> <!-- ended here /update done-->
-		</div>
-	<!--detail-paper-->
-		<div class="detail-paper">
-			<!--category-->
-		<div class="articletitle">
-			<a href="#">Entrpreneurship</a>
-				
-		</div>
-		</div>
-		</div>	
-		</div>
-		
-	<div id="article-c" class="article">
-			<!--paper slider-->
-		<div class="paper">
-			<!--img-box-->
-		<div class="front-img">
-			<img alt="libraryofbooks" src="./images/libraryofbooks.jpg">
-		</div>
-	<!--detail-paper-->
-		<div class="detail-paper">
-			<!--category-->
-		<div class="articletitle">
-			<a href="#">You're not dumb, it's just school</a>
-				
-		</div>
-		</div>
-		</div>	
-		</div>
-		
-	<div id="article-d" class="article">
-			<!--paper slider-->
-		<div class="paper">
-			<!--img-box-->
-		<div class="front-img">
-			<img alt="libraryofbooks" src="./images/libraryofbooks.jpg">
-		</div>
-	<!--detail-paper-->
-		<div class="detail-paper">
-			<!--category-->
-		<div class="articletitle">
-			<a href="#">You're not dumb, it's just school</a>
-				
-		</div>
-		</div>
-		</div>	
-		</div>
-		
-	<div id="article-e" class="article">
-			<!--paper slider-->
-		<div class="paper">
-			<!--img-box-->
-		<div class="front-img">
-			<img alt="libraryofbooks" src="./images/libraryofbooks.jpg">
-		</div>
-	<!--detail-paper-->
-		<div class="detail-paper">
-			<!--category-->
-		<div class="articletitle">
-			<a href="#">You're not dumb, it's just school</a>
-				
-		</div>
-		</div>
-		</div>	
-		</div>
-		
-	<div id="article-f" class="article">
-			<!--paper slider-->
-		<div class="paper">
-			<!--img-box-->
-		<div class="front-img">
-			<img alt="libraryofbooks" src="./images/libraryofbooks.jpg">
-		</div>
-	<!--detail-paper-->
-		<div class="detail-paper">
-			<!--category-->
-		<div class="articletitle">
-			<a href="#">You're not dumb, it's just school</a>
-				
-		</div>
-		</div>
-		</div>	
-		</div>
-		
-	</div>
-</article>
-
-</div>
-
-<footer class="bottomfooter">
-<span id="firstfooter" class="footer">
-	<img src="./images/finallogo.png" alt="DigitareTech Logo">
-</span>	
-
-<span id="middlefooter" class="footer">
-    <a href="Home.html" class = "footertab">Home</a>
-    <a href="AboutUs.html" class = "footertab">About Us</a>
-    <a href="Subjects.html" class = "footertab">Subjects</a>
-    <a href="ContactUs.html" class = "footertab">Contact Us</a>
-</span>
-
-<span id="lastfooter" class="footer">
-    
-</span>
-
-</footer>
-
 </body>
 </html>
