@@ -6,7 +6,7 @@ body {
     width: 100%;
     margin: 0px;
     padding: 0px;
-    min-height: 100%;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
@@ -60,14 +60,43 @@ nav a:hover {
 }
 
 .herocon {
-    text-align: center;
+/*     text-align: center;
     color: #fff;
-    padding: 1rem;
+    padding: 1rem; */
+    width: 80%;
+    max-height: 200px; /* Restrict the height */
+    overflow-y: scroll; /* Enable vertical scroll */
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    
+}
+
+
+
+/* Custom Scrollbar */
+.herocon::-webkit-scrollbar {
+    width: 10px;
+}
+
+.herocon::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+.herocon::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+.herocon::-webkit-scrollbar-thumb:hover {
+    background: #555;
 }
 
 .herocon h2 {
     font-size: 2rem;
 }
+/* 
 
 .Curious {
     background-color: #2da397;
@@ -178,6 +207,14 @@ footer {
     color: #FFFFFF;
     font-size: 1rem;
     font-weight: 500;
+} */
+
+footer {
+    background-color: #2da397;
+    padding: 1rem;
+    width: 100%;
+    position: relative;
+    bottom: 0;
 }
 
 /* Mobile responsiveness */
