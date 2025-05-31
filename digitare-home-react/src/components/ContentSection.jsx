@@ -3,7 +3,9 @@ import React from 'react';
 const ContentSection = ({ heading, text, image, imageLeft = false, bgColor = 'white' }) => {
   return (
     <section className={`px-6 py-10 bg-${bgColor}`}>
-      <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-8 ${imageLeft ? 'md:flex-row-reverse' : ''}`}">
+      <div className={`max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-8 ${
+    imageLeft ? 'md:flex-row-reverse' : ''
+  }`}>
         <div className="md:w-1/2">
           <img src={image} alt={heading} className="w-full rounded shadow-md" />
         </div>

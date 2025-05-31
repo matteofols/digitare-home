@@ -13,7 +13,7 @@ function App() {
 
   return (
     <div>
-      <Navbar />
+      {/* <Navbar /> */}
       <Hero />
       <FeaturedBooks />
       <ContentSection 
@@ -30,7 +30,7 @@ function App() {
         imageLeft={true}
       />
       <Articles />
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };
