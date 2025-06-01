@@ -15,6 +15,30 @@ const subjectData = {
       price: "Free",
       image: "/images/libraryofbooks.jpg",
     },
+    {
+      title: "Algebra Essentials",
+      subject: "Math",
+      price: "Free",
+      image: "/images/libraryofbooks.jpg",
+    },
+    {
+      title: "Algebra Essentials",
+      subject: "Math",
+      price: "Free",
+      image: "/images/libraryofbooks.jpg",
+    },
+    {
+      title: "Algebra Essentials",
+      subject: "Math",
+      price: "Free",
+      image: "/images/libraryofbooks.jpg",
+    },
+    {
+      title: "Algebra Essentials",
+      subject: "Math",
+      price: "Free",
+      image: "/images/libraryofbooks.jpg",
+    },
   ],
   Science: [
     {
@@ -25,6 +49,12 @@ const subjectData = {
     },
     {
       title: "Chemistry",
+      subject: "Science",
+      price: "Free",
+      image: "/images/groupsstudying.jpg",
+    },
+    {
+      title: "Physics",
       subject: "Science",
       price: "Free",
       image: "/images/groupsstudying.jpg",
