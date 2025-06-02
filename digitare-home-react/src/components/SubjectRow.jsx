@@ -6,7 +6,7 @@ const SubjectRow = ({ subject, books }) => {
   const scrollRef = useRef(null);
 
   const scroll = (direction) => {
-    const amount = 300; // pixels to scroll per click
+    const amount = 300;
     if (scrollRef.current) {
       scrollRef.current.scrollBy({
         left: direction === 'left' ? -amount : amount,
@@ -16,33 +16,39 @@ const SubjectRow = ({ subject, books }) => {
   };
 
   return (
-    <div className="mb-12 relative">
-      <h2 className="text-2xl font-bold text-[#2da397] mb-3 px-4">{subject}</h2>
+    <section className="mb-12 px-4 md:px-6">
+      <h2 className="text-2xl font-bold text-[#2da397] mb-4">{subject}</h2>
 
-      {/* Scroll Arrows */}
-      <button
-        onClick={() => scroll('left')}
-        className="hidden md:flex absolute left-2 top-[55%] z-10 p-2 bg-white shadow rounded-full hover:bg-gray-200 transition"
-      >
-        <ChevronLeft size={24} />
-      </button>
+      <div className="relative">
+        {/* Left Arrow */}
+        <button
+          onClick={() => scroll('left')}
+          className="hidden md:flex absolute left-0 top-1/2 transform -translate-y-1/2 z-10 bg-white border border-gray-300 rounded-full p-2 shadow hover:bg-gray-100 transition"
+        >
+          <ChevronLeft size={20} />
+        </button>
 
-      <button
-        onClick={() => scroll('right')}
-        className="hidden md:flex absolute right-2 top-[55%] z-10 p-2 bg-white shadow rounded-full hover:bg-gray-200 transition"
-      >
-        <ChevronRight size={24} />
-      </button>
-
-      {/* Scrollable Row */}
-      <div ref={scrollRef} className="overflow-x-auto px-6 scrollbar-hide">
-        <div className="flex space-x-4 w-max">
-          {books.map((book, index) => (
-            <BookCard key={index} {...book} />
-          ))}
+        {/* Scrollable Row */}
+        <div
+          ref={scrollRef}
+          className="overflow-x-auto overflow-y-hidden scrollbar-hide"
+        >
+          <div className="flex space-x-4 w-max pr-6 pl-8">
+            {books.map((book, index) => (
+              <BookCard key={index} {...book} />
+            ))}
+          </div>
         </div>
+
+        {/* Right Arrow */}
+        <button
+          onClick={() => scroll('right')}
+          className="hidden md:flex absolute right-0 top-1/2 transform -translate-y-1/2 z-10 bg-white border border-gray-300 rounded-full p-2 shadow hover:bg-gray-100 transition"
+        >
+          <ChevronRight size={20} />
+        </button>
       </div>
-    </div>
+    </section>
   );
 };
 

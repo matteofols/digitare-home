@@ -1,82 +1,16 @@
 import React from "react";
 import SubjectRow from "../components/SubjectRow";
-
-const subjectData = {
-  Math: [
-    {
-      title: "Calculus Vol. 1",
-      subject: "Math",
-      price: "Free",
-      image: "/images/library.jpg",
-    },
-    {
-      title: "Algebra Essentials",
-      subject: "Math",
-      price: "Free",
-      image: "/images/libraryofbooks.jpg",
-    },
-    {
-      title: "Algebra Essentials",
-      subject: "Math",
-      price: "Free",
-      image: "/images/libraryofbooks.jpg",
-    },
-    {
-      title: "Algebra Essentials",
-      subject: "Math",
-      price: "Free",
-      image: "/images/libraryofbooks.jpg",
-    },
-    {
-      title: "Algebra Essentials",
-      subject: "Math",
-      price: "Free",
-      image: "/images/libraryofbooks.jpg",
-    },
-    {
-      title: "Algebra Essentials",
-      subject: "Math",
-      price: "Free",
-      image: "/images/libraryofbooks.jpg",
-    },
-  ],
-  Science: [
-    {
-      title: "Biology",
-      subject: "Science",
-      price: "Free",
-      image: "/images/biology-AP.png",
-    },
-    {
-      title: "Chemistry",
-      subject: "Science",
-      price: "Free",
-      image: "/images/groupsstudying.jpg",
-    },
-    {
-      title: "Physics",
-      subject: "Science",
-      price: "Free",
-      image: "/images/groupsstudying.jpg",
-    },
-  ],
-  Business: [
-    {
-      title: "Entrepreneurship",
-      subject: "Business",
-      price: "Free",
-      image: "/images/entrepreneurship.png",
-    },
-  ],
-};
+import subjectData from "../data/subjects";    
 
 const SubjectsPage = () => {
   return (
-    <div className="px-2 py-10">
-      {Object.entries(subjectData).map(([subject, books]) => (
-        <SubjectRow key={subject} subject={subject} books={books} />
-      ))}
-    </div>
+    <section className="min-h-screen px-4 md:px-8 py-12 bg-gray-50">
+      <div className="max-w-7xl mx-auto">
+        {Object.entries(subjectData).map(([subject, books]) => (
+          <SubjectRow key={subject} subject={subject} books={books} />
+        ))}
+      </div>
+    </section>
   );
 };
 

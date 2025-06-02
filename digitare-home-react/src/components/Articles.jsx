@@ -21,7 +21,7 @@ const articles = [
 
 const Articles = () => {
   return (
-    <section className="px-6 py-10 bg-gray-100">
+    <section className="px-6 py-12 bg-gray-100">
       <h2 className="text-2xl font-bold text-center text-[#2da397] mb-6">Latest Articles</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {articles.map((article, index) => (
