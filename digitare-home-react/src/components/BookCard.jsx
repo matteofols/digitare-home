@@ -8,16 +8,21 @@ import React from 'react';
  * @returns {JSX.Element} A formatted book card component
  */
 
-const BookCard = ({ title, subject, price, image }) => {
+const BookCard = ({ title, subject, price, image, link }) => {
   return (
-    <div className="min-w-[200px] max-w-[200px] flex-shrink-0 bg-white rounded shadow overflow-hidden">
+    <a
+      href={link}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="min-w-[200px] max-w-[200px] bg-white rounded shadow-md overflow-hidden flex-shrink-0 transition hover:scale-105"
+    >
       <img src={image} alt={title} className="h-40 w-full object-cover" />
       <div className="p-4">
         <h3 className="text-lg font-semibold text-[#2da397]">{title}</h3>
         <p className="text-sm text-gray-600">{subject}</p>
         <p className="text-sm text-gray-800 font-bold">{price}</p>
       </div>
-    </div>
+    </a>
   );
 };
 

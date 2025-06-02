@@ -4,24 +4,28 @@ const books = [
     subject: "Science",
     price: "Free",
     image: "/images/biology-AP.png",
+    link: "https://openstax.org/details/books/biology-ap-courses",
   },
   {
-    title: "Entrepreneurship",
-    subject: "Business",
+    title: "Anatomy and Physiology",
+    subject: "Science",
     price: "Free",
-    image: "/images/entrepreneurship.png",
+    image: "/images/anatomy.png",
+    link: "https://openstax.org/details/books/anatomy-and-physiology-2e"
   },
   {
-    title: "Library Basics",
-    subject: "Research",
+    title: "Astronomy",
+    subject: "Science",
     price: "Free",
-    image: "/images/library.jpg",
+    image: "/images/astronomy.png",
+    link: "https://openstax.org/details/books/astronomy-2e",
   },
   {
-    title: "Typing 101",
-    subject: "Tech Skills",
+    title: "Physics",
+    subject: "Science",
     price: "Free",
-    image: "/images/typing.jpg",
+    image: "/images/physics.png",
+    link: "https://openstax.org/details/books/physics",
   },
 ];
 
