@@ -1,5 +1,12 @@
 import React from 'react';
 
+/**
+ * @component AboutPage
+ * @description Static page describing the mission, background, and values behind the Digitare platform and why it was built for students.
+ * @author Matthew Folefac <matthewfolefac98@gmail.com>
+ * @returns {JSX.Element} The About Us page
+ */
+
 const AboutPage = () => {
   return (
     <section className="min-h-screen px-6 py-12">

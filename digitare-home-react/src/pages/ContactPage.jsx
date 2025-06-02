@@ -1,5 +1,12 @@
 import React from 'react';
 
+/**
+ * @component ContactPage
+ * @description Contact form page where users can send messages or inquiries. Includes inputs for name, email, and message content.
+ * @author Matthew Folefac <matthewfolefac98@gmail.com>
+ * @returns {JSX.Element} The Contact Us page
+ */
+
 const ContactPage = () => {
   return (
     <section className="min-h-screen px-6 py-12">

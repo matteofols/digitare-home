@@ -1,5 +1,12 @@
 import React from 'react';
 
+/**
+ * @component LoginPage
+ * @description Displays a login form for users to enter their email and password. Styled for simplicity and responsiveness across devices.
+ * @author Matthew Folefac <matthewfolefac98@gmail.com>
+ * @returns {JSX.Element} The user login page
+ */
+
 const LoginPage = () => {
   return (
     <div className="max-w-sm mx-auto px-6 py-16">

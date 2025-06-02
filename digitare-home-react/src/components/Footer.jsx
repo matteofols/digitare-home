@@ -1,6 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+/**
+ * @component Footer
+ * @description Displays the bottom section of the page with links to About and Contact pages and site branding. Persistent across all pages.
+ * @author Matthew Folefac <matthewfolefac98@gmail.com>
+ * @returns {JSX.Element} The footer component
+ */
+
+
 const Footer = () => {
   return (
     <footer className="bg-[#2da397] text-white px-6 py-8 mt-10">

@@ -1,5 +1,13 @@
 import React from 'react';
 
+/**
+ * @component ArticleCard
+ * @description Represents a single article card with an image, title, and short summary. Used within the Articles section.
+ * @author Matthew Folefac <matthewfolefac98@gmail.com>
+ * @param {Object} props - Contains title, summary, and image URL
+ * @returns {JSX.Element} An individual article preview card
+ */
+
 const ArticleCard = ({ title, summary, image }) => {
   return (
     <div className="bg-white rounded shadow-md overflow-hidden hover:shadow-lg transition">

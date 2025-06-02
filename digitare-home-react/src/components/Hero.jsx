@@ -1,5 +1,12 @@
 import React from 'react';
 
+/**
+ * @component Hero
+ * @description Displays the main hero section with a headline, supporting text, image, and a call-to-action button for browsing books.
+ * @author Matthew Folefac <matthewfolefac98@gmail.com>
+ * @returns {JSX.Element} The Hero section component
+ */
+
 const Hero = () => {
   return (
     <section className="flex flex-col md:flex-row items-center px-6 py-10 bg-[#f4f4f4]">

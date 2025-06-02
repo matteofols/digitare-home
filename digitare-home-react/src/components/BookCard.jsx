@@ -1,5 +1,13 @@
 import React from 'react';
 
+/**
+ * @component BookCard
+ * @description Renders a single card displaying a textbook's image, title, subject, and price. Used within scrollable subject rows and featured sections.
+ * @author Matthew Folefac <matthewfolefac98@gmail.com>
+ * @param {Object} props - Contains title, subject, price, and image URL for the book
+ * @returns {JSX.Element} A formatted book card component
+ */
+
 const BookCard = ({ title, subject, price, image }) => {
   return (
     <div className="min-w-[200px] max-w-[200px] flex-shrink-0 bg-white rounded shadow overflow-hidden">

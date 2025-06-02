@@ -1,17 +1,23 @@
 import { useState } from 'react'
 import './App.css'
 import Hero from './components/Hero';
-import Navbar from './components/Navbar';
 import FeaturedBooks from './components/FeaturedBooks';
 import ContentSection from './components/ContentSection';
 import Articles from './components/Articles';
-import Footer from './components/Footer';
+
+
+/**
+ * @component App
+ * @description Root homepage component that assembles the primary sections including Navbar, Hero, FeaturedBooks, ContentSections, Articles, and Footer. Rendered at the '/' route and wrapped by Layout to persist nav/footer across the site.
+ * @author Matthew Folefac <matthewfolefac98@gmail.com>
+ * @returns {JSX.Element} The full Digitare homepage layout
+ */
+
 
 function App() {
 
   return (
     <div>
-      {/* <Navbar /> */}
       <Hero />
       <FeaturedBooks />
       <ContentSection 
@@ -28,7 +34,6 @@ function App() {
         imageLeft={true}
       />
       <Articles />
-      {/* <Footer /> */}
     </div>
   );
 };

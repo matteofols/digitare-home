@@ -1,6 +1,13 @@
 import React from 'react';
 import ArticleCard from './ArticleCard';
 
+/**
+ * @component Articles
+ * @description Displays a grid of article cards summarizing educational content, stories, or updates. Positioned at the bottom of the homepage.
+ * @author Matthew Folefac <matthewfolefac98@gmail.com>
+ * @returns {JSX.Element} A list of articles with previews
+ */
+
 const articles = [
   {
     title: "How to Get the Most from Free Textbooks",

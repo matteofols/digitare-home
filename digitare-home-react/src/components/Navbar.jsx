@@ -1,6 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+/**
+ * @component Navbar
+ * @description Renders the top navigation bar with site logo and links to major pages. Responsive and persistent across all routes.
+ * @author Matthew Folefac <matthewfolefac98@gmail.com>
+ * @returns {JSX.Element} The navigation bar component
+ */
+
+
 const Navbar = () => {
   return (
     <nav className="bg-white shadow-md px-4 py-4">

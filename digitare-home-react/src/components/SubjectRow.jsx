@@ -2,6 +2,14 @@ import React, { useRef } from 'react';
 import BookCard from './BookCard';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
+/**
+ * @component SubjectRow
+ * @description Displays a horizontal scrollable row of books for a single subject. Includes optional left/right scroll buttons on desktop screens.
+ * @author Matthew Folefac <matthewfolefac98@gmail.com>
+ * @param {Object} props - Contains the subject name and array of book data
+ * @returns {JSX.Element} A subject-specific row of book cards
+ */
+
 const SubjectRow = ({ subject, books }) => {
   const scrollRef = useRef(null);
 

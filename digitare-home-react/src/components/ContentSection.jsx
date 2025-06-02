@@ -1,5 +1,13 @@
 import React from 'react';
 
+/**
+ * @component ContentSection
+ * @description Reusable section with text and image side-by-side. Can be flipped left/right using a prop for layout variation.
+ * @author Matthew Folefac <matthewfolefac98@gmail.com>
+ * @param {Object} props - Includes heading, text, image URL, and layout direction (imageLeft)
+ * @returns {JSX.Element} The image-text content block component
+ */
+
 const ContentSection = ({ heading, text, image, imageLeft = false, bgColor = 'white' }) => {
   return (
     <section className={`px-6 py-10 bg-${bgColor}`}>
