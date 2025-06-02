@@ -51,26 +51,88 @@ const subjectData = {
       subject: "Science",
       price: "Free",
       image: "/images/biology-AP.png",
+      link: "https://openstax.org/details/books/biology-ap-courses",
     },
     {
       title: "Chemistry",
       subject: "Science",
       price: "Free",
-      image: "/images/groupsstudying.jpg",
+      image: "/images/chemistry.png",
+      link: "https://openstax.org/details/books/chemistry-2e",
     },
     {
       title: "Physics",
       subject: "Science",
       price: "Free",
-      image: "/images/entrepreneurship.png",
+      image: "/images/physics.png",
+      link: "https://openstax.org/details/books/physics",
     },
+    {
+      title: "Anatomy and Physiology",
+      subject: "Science",
+      price: "Free",
+      image: "/images/anatomy.png",
+      link: "https://openstax.org/details/books/anatomy-and-physiology-2e"
+    },
+    {
+      title: "Micro-biology",
+      subject: "Science",
+      price: "Free",
+      image: "/images/microbiology.png",
+      link: "https://openstax.org/details/books/microbiology"
+    },
+    {
+      title: "Organic Chemistry",
+      subject: "Science",
+      price: "Free",
+      image: "/images/organic-chemistry.png",
+      link: "https://openstax.org/details/books/organic-chemistry"
+    },
+    
+   
   ],
   Business: [
     {
-      title: "Entrepreneurship",
+      title: "Principles of Accounting",
       subject: "Business",
       price: "Free",
-      image: "/images/entrepreneurship.png",
+      image: "/images/accounting-1.png",
+      link: "https://openstax.org/details/books/principles-financial-accounting",
+    },
+    {
+      title: "Principles of Finance",
+      subject: "Business",
+      price: "Free",
+      image: "/images/finance.png",
+      link: "https://openstax.org/details/books/principles-finance",
+    },
+    {
+      title: "Intro to Intellectual Property",
+      subject: "Business",
+      price: "Free",
+      image: "/images/intellectual-property.png",
+      link: "https://openstax.org/details/books/introduction-intellectual-property",
+    },
+    {
+      title: "Business Ethics",
+      subject: "Business",
+      price: "Free",
+      image: "/images/business-ethics.png",
+      link: "https://openstax.org/details/books/business-ethics",
+    },
+    {
+      title: "Business Law",
+      subject: "Business",
+      price: "Free",
+      image: "/images/business-law.png",
+      link: "https://openstax.org/details/books/business-law-i-essentials",
+    },
+    {
+      title: "Principles of Economics",
+      subject: "Business",
+      price: "Free",
+      image: "/images/economics.png",
+      link: "https://openstax.org/details/books/principles-economics-3e",
     },
   ],
 };

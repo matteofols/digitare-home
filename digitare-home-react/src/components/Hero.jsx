@@ -20,7 +20,7 @@ const Hero = () => {
         </button>
       </div>
       <div className="md:w-1/2">
-        <img src="/images/libraryofbooks.jpg" alt="Books" className="w-full rounded shadow-lg" />
+        <img src="/images/library.jpg" alt="Books" className="w-full rounded shadow-lg" />
       </div>
     </section>
   );
