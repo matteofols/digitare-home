@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 /**
  * @component ArticleCard
@@ -8,15 +9,21 @@ import React from 'react';
  * @returns {JSX.Element} An individual article preview card
  */
 
-const ArticleCard = ({ title, summary, image }) => {
-  return (
-    <div className="bg-white rounded shadow-md overflow-hidden hover:shadow-lg transition">
-      <img src={image} alt={title} className="h-40 w-full object-cover" />
+const ArticleCard = ({ title, summary, image, link, internal }) => {
+  const CardContent = (
+    <div className="block max-w-sm bg-white rounded-lg shadow hover:shadow-md transition hover:scale-105">
+      <img src={image} alt={title} className="w-full h-40 object-cover rounded-t-lg" />
       <div className="p-4">
-        <h3 className="text-xl font-semibold text-[#2da397] mb-2">{title}</h3>
-        <p className="text-gray-600 text-sm">{summary}</p>
+        <h3 className="text-xl font-bold text-[#2da397]">{title}</h3>
+        <p className="text-gray-600 mt-2 text-sm">{summary}</p>
       </div>
     </div>
+  );
+
+  return internal ? (
+    <Link to={link}>{CardContent}</Link>
+  ) : (
+    <a href={link} target="_blank" rel="noopener noreferrer">{CardContent}</a>
   );
 };
 
