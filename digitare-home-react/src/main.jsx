@@ -9,6 +9,8 @@ import AboutPage from './pages/AboutPage.jsx';
 import LoginPage from './pages/LoginPage.jsx';
 import ContactPage from './pages/ContactPage.jsx';
 import Layout from './components/Layout.jsx';
+import './styles/layout.css';
+
 
 
 createRoot(document.getElementById('root')).render(
