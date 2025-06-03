@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 /**
  * @component Hero
@@ -16,7 +17,7 @@ const Hero = () => {
           Explore a curated selection of free textbooks for your courses, powered by OpenStax.
         </p>
         <button className="bg-[#2da397] text-white px-5 py-2 rounded hover:bg-[#238f84] transition">
-          Browse Books
+          <Link to="/subjects">Browse Books</Link>
         </button>
       </div>
       <div className="md:w-1/2">
