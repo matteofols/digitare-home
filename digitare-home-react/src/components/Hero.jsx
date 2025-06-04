@@ -17,7 +17,7 @@ const Hero = () => {
           Explore a curated selection of free textbooks for your courses, powered by OpenStax.
         </p>
         <button className="bg-[#2da397] text-white px-5 py-2 rounded hover:bg-[#238f84] transition">
-          <Link to="/subjects">Browse Books</Link>
+          <Link to="/subjects">Find More Books</Link>
         </button>
       </div>
       <div className="md:w-1/2">
